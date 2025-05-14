@@ -50,15 +50,17 @@ border-radius: 20px;
 }
 
 #logo {
+    position: relative;
     display: flex;
-    align-items:flex-start ;
-    justify-content: flex-start;
-    bottom: 50%;
+    align-items:center ;
+    justify-content: center;
+    margin-top: 0;
 }
 
 #logo img {
     width: 100px;
     height: 100px;
+    margin-bottom: 20px;
     
 
 }
@@ -79,4 +81,9 @@ border-radius: 20px;
     align-items: center;
     justify-content: center;
    
+}
+
+#footer img {
+    width: 100px;
+    padding: 10px;
 }
