@@ -5,16 +5,18 @@ import recetasData from "./data/recetas.json"
 import './App.css'
 import { useState } from "react"
 
-const [recetasObj, setRecetasObj] = useState(recetasData)
+
+
 
 function App() {
-  
+  const [recetasObj, setRecetasObj] = useState(recetasData)
 
   return (
     <>
      <Navbar />
      <Sidebard />
      <Footer />
+     
 
     </>
   )
