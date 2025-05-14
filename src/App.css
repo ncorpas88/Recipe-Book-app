@@ -14,23 +14,25 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 80px;
-height: 80px;
+height: 60px;
 margin: 50px;
 border-radius: 20px;
 }
 
 #button img {
-    width: 80px;
-    height: 60px;
+    width: 60px;
+    height: 40px;
     
 
 }
 
 #recetario {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
 }
+
 
 #contenedor {
     position: absolute;
