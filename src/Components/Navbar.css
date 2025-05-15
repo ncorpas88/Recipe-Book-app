@@ -1,4 +1,29 @@
 #navbar {
- 
-    background-color: aqua;
+    background-color: rgb(247, 193, 76);
+
+}
+
+#logo {
+    position: relative;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin-top: 0;
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    
+
+}
+
+#title {
+
+    right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }

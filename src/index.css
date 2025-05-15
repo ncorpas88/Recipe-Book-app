@@ -1,5 +1,8 @@
 :root {
    
-    background-color: gray;
+    background-color: white;
 }
 
+body {
+  margin: 0;
+}

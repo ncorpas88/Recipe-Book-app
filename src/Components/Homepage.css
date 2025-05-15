@@ -1,0 +1,26 @@
+.info-container {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+
+.chicote {
+    width: 70rem;
+    margin-top: 3rem;
+    border-radius: 10%;
+    box-shadow: 70px 70px orange;
+    
+}
+
+.titulo {
+     font-family: 'Orbitron', sans-serif;
+     margin-top: 50px;
+}
+
+.tex-container {
+    margin-top: 60rem;
+}

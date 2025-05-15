@@ -1,6 +1,5 @@
 import logoNvbar from "../image/logobook.png";
-import "./Navbar.css"
-
+import './Navbar.css';
 
 function Navbar() {
   return (
