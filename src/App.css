@@ -54,6 +54,12 @@ border-radius: 20px;
 }
 
 #footer img {
-    width: 100px;
+    width: 90px;
     padding: 10px;
+    
+}
+
+#details {
+    text-align: center;
+    background-color: rgb(146, 172, 100);
 }
