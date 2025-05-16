@@ -1,4 +1,5 @@
 import buttonMenu from "../image/menuu.png";
+import { Link } from "react-router-dom";
 
 function Sidebard() {
   return (
@@ -8,7 +9,9 @@ function Sidebard() {
           <h2>Recetario</h2>
         </div>
         <button id="button">
-          <img src={buttonMenu} alt="logo-button" />
+          <Link to="/">
+            <img src={buttonMenu} alt="logo-button" />
+          </Link>
         </button>
       </div>
     </section>
