@@ -6,6 +6,8 @@ import Footer from "./Components/Footer";
 import { Routes, Route } from "react-router-dom";
 import RecipeList from "./pages/RecipeList";
 import ItemDetails from "./pages/ItemDetails";
+import AboutUs from "./pages/Aboutus";
+import Error from "./pages/error";
 
 function App() {
   return (
@@ -16,9 +18,9 @@ function App() {
       <Routes>
 
         <Route path="/" element={<HomePage />} />
-        {/*<Route path="/about" element={<About />} />*/}
+        <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/recipeList" element={<RecipeList />} />
-        {/*<Route path="*" element={<NotFound/> }/>*/}
+        <Route path="*" element={<Error/> }/>
         <Route path="/recipeList/:idRecipe" element={<ItemDetails />}/>
       
       </Routes>
