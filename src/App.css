@@ -73,3 +73,15 @@ border-radius: 20px;
     text-align: center;
 }
 
+#lista {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
