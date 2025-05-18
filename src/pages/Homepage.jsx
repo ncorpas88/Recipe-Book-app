@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import recetasData from "../data/recetas.json";
 import "./Homepage.css";
 import chicote from "../image/chicote.png";
-import RecipeList from "./RecipeList";
+import RecipeList from "../Components/RecipeList";
 
 
 function HomePage() {

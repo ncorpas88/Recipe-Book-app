@@ -1,5 +1,6 @@
 import logoNvbar from "../image/logobook.png";
-import './Navbar.css';
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,7 +10,12 @@ function Navbar() {
           <h1>Recetas Michelin</h1>
         </div>
         <div id="logo">
-          <img src={logoNvbar} alt="logo" />
+          <Link to="/">
+            <img src={logoNvbar} alt="logo" />
+          </Link>
+          <Link to="/aboutUs">
+          <h3>AboutUsS</h3>
+          </Link>
         </div>
       </div>
     </section>

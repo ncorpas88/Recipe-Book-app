@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import Sidebard from "./Components/Sidebar";
 import Footer from "./Components/Footer";
 import { Routes, Route } from "react-router-dom";
-import RecipeList from "./pages/RecipeList";
+import RecipeList from "./Components/RecipeList";
 import ItemDetails from "./pages/ItemDetails";
 import AboutUs from "./pages/Aboutus";
 import Error from "./pages/error";

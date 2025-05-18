@@ -14,7 +14,7 @@ function RecipeList() {
   }
   
     return (
-    <div>
+    <div id="lista">
       
       <h2>Lista de Recetas</h2>
 
