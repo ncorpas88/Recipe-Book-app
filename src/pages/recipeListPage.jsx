@@ -1,9 +1,10 @@
 
+import RecipeList from "../Components/RecipeList";
 
-function recipeListPage() {
+function recipeListPage({recipes, setRecipes}) {
   return (
     <div>
-      
+      <RecipeList recipes={recipes} setRecipes={setRecipes} />
     </div>
   );
 }

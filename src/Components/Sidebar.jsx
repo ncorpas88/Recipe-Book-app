@@ -8,11 +8,16 @@ function Sidebard() {
         <div id="recetario">
           <h2>Recetario</h2>
         </div>
-        <button id="button">
-          <Link to="/">
-            <img src={buttonMenu} alt="logo-button" />
-          </Link>
-        </button>
+        <ul>
+          <li>
+              <Link to="/">
+                Menú principal
+              </Link>
+          </li>
+          <li>
+            <Link to="/recipeList">Lista Recetas</Link>
+          </li>
+        </ul>
       </div>
     </section>
   );

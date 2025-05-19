@@ -20,7 +20,6 @@ function App() {
       <Sidebard />
       
       <Routes>
-
         <Route path="/" element={<HomePage recipes={recipes} setRecipes={setRecipes} />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/recipeList" element={<RecipeList recipes={recipes} setRecipes={setRecipes} />} />

@@ -4,24 +4,28 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url("../image/depositphotos_80081094-stock-illustration-seamless-pattern-with-hand-drawn.webp");
+    background-image: url("../image/concepto-de-herramientas-de-helado-de-vista-superior-con-espacio-de-copia.jpg");
+    background-size: cover;
+    
    
 
 }
 
 .chicote {
-    width: 30rem;
+    width: 34rem;
     margin-top: 3rem;
     border-radius: 10%;
-    box-shadow: 70px 70px orange;
+    box-shadow: 70px 70px rgb(16, 27, 49);
     
 }
 
 .titulo {
      font-family: 'Orbitron', sans-serif;
      margin-top: 50px;
-     background-color: rgb(236, 138, 9);
+     background-color: rgb(15, 11, 5);
+     color: aliceblue;
      border-radius: 10px;
+     padding: 10px;
 }
 
 .tex-container {
