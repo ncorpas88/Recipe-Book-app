@@ -1,7 +1,5 @@
 #navbar {
     background-color: rgb(87, 87, 87);
-    background-image: url("../image/tusrecetas.png");
-    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -19,24 +17,21 @@
 #logo img {
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-top: 30px;
     
 
 }
 
 #title {
-
-    right: 50%;
+    position: absolute;
+    font-family: "Birthstone Bounce", cursive;
+    font-size: 35px;
+    font-style: normal;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    color: white;
+    margin-left: 50%;
 }
 
-#enlaceAbout {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}

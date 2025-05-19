@@ -1,10 +1,12 @@
-
 import RecipeList from "../Components/RecipeList";
 
-function recipeListPage({recipes, setRecipes}) {
+
+function recipeListPage({ recipes, setRecipes }) {
   return (
-    <div>
-      <RecipeList recipes={recipes} setRecipes={setRecipes} />
+    <div id="lispage">
+      <section>
+        <RecipeList recipes={recipes} setRecipes={setRecipes} />
+      </section>
     </div>
   );
 }

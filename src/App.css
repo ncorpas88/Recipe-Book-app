@@ -39,6 +39,7 @@ border-radius: 20px;
     background-color: rgb(71, 87, 68);
     height: 100%;
     width: 194px;
+    padding-right: 20px;
 }
 
 
@@ -67,6 +68,7 @@ border-radius: 20px;
 
 #about {
     text-align: center;
+   background-color: rgb(83, 92, 100);
     
 }
 
@@ -82,7 +84,7 @@ border-radius: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(17, 147, 151);
+    background-color: rgb(107, 161, 150);
     width: 40%;
     border-radius: 25px;
     margin: 30px auto 100px auto;
@@ -94,5 +96,32 @@ border-radius: 20px;
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 160px;
+    font-size: large;
+    text-align: center;
     
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 18px;
+}
+
+#formulario input {
+    margin-left: 9px;
+}
+
+#recetario {
+    font-size:x-large;
+}
+
+#lista li {
+    font-size: x-large;
+    padding-top: 15px;
+   
+}
+
+#lista button {
+    border-radius: 10px;
+    background-color: rgb(250, 104, 104);
 }

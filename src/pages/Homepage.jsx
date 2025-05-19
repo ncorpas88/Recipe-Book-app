@@ -9,7 +9,6 @@ function HomePage({recipes,setRecipes}) {
   return (
     <>
       <div className="info-container">
-        <h1 className="titulo">Encuentra tus recetas favoritas</h1>
         <img className="chicote" src={chicote} alt="chicotee" />
         <br />
         <br />

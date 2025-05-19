@@ -1,10 +1,10 @@
-import allRecipe from "../data/recetas.json";
+
 import { Link } from "react-router-dom";
-import Formulario from "./Formulario";
+
 
 function RecipeList({recipes, setRecipes}) {
   const handleDelete = (id) => {
-    const updateList = recipes.filter((eacRecipe) => recipes.id !== id);
+    const updateList = recipes.filter((eacRecipe) => eacRecipe.id !== id);
     setRecipes(updateList);
   };
 
