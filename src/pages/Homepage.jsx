@@ -6,15 +6,15 @@ import RecipeList from "../Components/RecipeList";
 import Formulario from "../Components/Formulario";
 
 
-function HomePage() {
-  const [recetasObj, setRecetasObj] = useState(recetasData);
+function HomePage({recipes,setRecipes}) {
+
   return (
     <>
       <div className="info-container">
         <h1 className="titulo">Encuentra tus recetas favoritas</h1>
         <img className="chicote" src={chicote} alt="chicotee" />
-        <Formulario />
-        <RecipeList />
+        <Formulario recipes={recipes} setRecipes={setRecipes} />
+        <RecipeList recipes={recipes} setRecipes={setRecipes} />
       </div>
     </>
   );

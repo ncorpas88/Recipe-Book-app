@@ -1,38 +1,30 @@
-import allRecipe from "../data/recetas.json"
-import { Link } from "react-router-dom"
-import { useState } from "react";
+import allRecipe from "../data/recetas.json";
+import { Link } from "react-router-dom";
+import Formulario from "./Formulario";
 
-
-
-function RecipeList() {
-
-  const [recipes, setRecipes] = useState(allRecipe)
-  
+function RecipeList({recipes, setRecipes}) {
   const handleDelete = (id) => {
-    const updateList = recipes.filter((eacRecipe) => recipes.id !== id)
-    setRecipes(updateList)
-  }
-  
-    return (
-    <div id="lista">
-      
-      <h2>Lista de Recetas</h2>
+    const updateList = recipes.filter((eacRecipe) => recipes.id !== id);
+    setRecipes(updateList);
+  };
 
-      {allRecipe.map((eachRecipe, i) => {
-        
-        return(
-            <li key={i}>
-                <Link to={`/recipeList/${eachRecipe.id}`}>{eachRecipe.name} {eachRecipe.calories < 300 ? "✔️" : "❌"}</Link>
-              <button onClick={() => handleDelete(eachRecipe.id)}>Borrar</button>
+  return (
+    <div id="lista">
+      <h2>Lista de Recetas</h2>
+      <ul>
+        {recipes.map((eachRecipe, i) => (
+            <li key={eachRecipe.id || i}>
+              <Link to={`/recipeList/${eachRecipe.id}`}>
+                {eachRecipe.name} {eachRecipe.calories < 300 ? "✔️" : "❌"}
+              </Link>
+              <button onClick={() => handleDelete(eachRecipe.id)}>
+                Borrar
+              </button>
             </li>
-        )
-      })}
+          ))}
+      </ul>
     </div>
   );
-
-
-
-
 }
 
 export default RecipeList;

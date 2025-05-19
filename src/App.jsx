@@ -8,8 +8,12 @@ import RecipeList from "./Components/RecipeList";
 import ItemDetails from "./pages/ItemDetails";
 import AboutUs from "./pages/Aboutus";
 import Error from "./pages/error";
+import { useState } from "react";
+import recipeData from "./data/recetas.json"
 
 function App() {
+  const [recipes, setRecipes] = useState(recipeData) 
+
   return (
     <>
       <Navbar />
@@ -17,12 +21,11 @@ function App() {
       
       <Routes>
 
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage recipes={recipes} setRecipes={setRecipes} />} />
         <Route path="/aboutUs" element={<AboutUs />} />
-        <Route path="/recipeList" element={<RecipeList />} />
+        <Route path="/recipeList" element={<RecipeList recipes={recipes} setRecipes={setRecipes} />} />
+        <Route path="/recipeList/:idRecipe" element={<ItemDetails recipes={recipes} />}/>
         <Route path="*" element={<Error/> }/>
-        <Route path="/recipeList/:idRecipe" element={<ItemDetails />}/>
-      
       </Routes>
       <Footer />
     </>

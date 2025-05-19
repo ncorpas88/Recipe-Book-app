@@ -1,29 +1,20 @@
 import { useParams } from "react-router-dom";
-import allRecipes from "../data/recetas.json"
-
-function ItemDetails() {
-
-    const params = useParams()
-    
 
 
-    const filteredRecipe = allRecipes.find((eachRecipe) => {
-        if(eachRecipe.id === params.idRecipe) {
-            return true
-        }
-    })
+function ItemDetails({recipes}) {
 
-    
+  const {idRecipe} = useParams()
+
+  const filterRecipe = recipes.find((eachRecipe) => String(eachRecipe.id) === idRecipe)
+
+
+
   return (
-    
     <div id="details">
-      
       <h2>Receta</h2>
-
-      <h4>Nombre:{filteredRecipe.name}</h4>
-      <h5>Calorias:{filteredRecipe.calories}</h5>
-      <img src={filteredRecipe.image} alt="image" width={200} />
-
+      <h3>Nombre: {filterRecipe.name}</h3>
+      <h4>Calirías: {filterRecipe.calories}</h4>
+      <img src={filterRecipe.image} alt={filterRecipe.name} width={400}/>
     </div>
   );
 }
