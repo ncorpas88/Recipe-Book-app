@@ -13,8 +13,10 @@ function Navbar() {
           <Link to="/">
             <img src={logoNvbar} alt="logo" />
           </Link>
+        </div>
+        <div id="enlaceAbout">
           <Link to="/aboutUs">
-          <h3>AboutUsS</h3>
+            <h3>AboutUsS</h3>
           </Link>
         </div>
       </div>

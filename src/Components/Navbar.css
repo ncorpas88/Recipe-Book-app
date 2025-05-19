@@ -1,14 +1,19 @@
 #navbar {
-    background-color: rgb(247, 193, 76);
+    background-color: rgb(148, 41, 8);
+    background-image: url("../image/tusrecetas.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
 #logo {
     position: relative;
     display: flex;
-    align-items:center ;
-    justify-content: center;
-    margin-top: 0;
+    align-items:self-start ;
+    justify-content: start;
+    padding-bottom: 20px;
+    padding-left: 40px;
 }
 
 #logo img {
@@ -22,6 +27,14 @@
 #title {
 
     right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#enlaceAbout {
     display: flex;
     align-items: center;
     justify-content: center;
