@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<HomePage recipes={recipes} setRecipes={setRecipes} />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/recipeList" element={<RecipeList recipes={recipes} setRecipes={setRecipes} />} />
-        <Route path="/recipeList/:idRecipe" element={<ItemDetails recipes={recipes} />}/>
+        <Route path="/recipeList/:idRecipe" element={<ItemDetails recipes={recipes} setRecipes={setRecipes}/>}/>
         <Route path="*" element={<Error/> }/>
       </Routes>
       <Footer />

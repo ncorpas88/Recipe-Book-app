@@ -1,4 +1,4 @@
-import recipeData from "../data/recetas.json";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function Formulario({recipes, setRecipes}) {
@@ -6,6 +6,8 @@ function Formulario({recipes, setRecipes}) {
   const [recipeName, setRecipeName] = useState("")
   const [recipeCalories, setRecipeCalories] = useState("")
   const [recipeImage, setRecipeImage] = useState("")
+
+  const navigate = useNavigate()
 
 
   function handleSumit(event) {
@@ -24,6 +26,8 @@ function Formulario({recipes, setRecipes}) {
     setRecipeName("")
     setRecipeCalories("")
     setRecipeImage("")
+
+    navigate("/recipeList")
 
   }
 

@@ -1,12 +1,11 @@
 import RecipeList from "../Components/RecipeList";
+import "./RecipeListPage.css";
 
 
 function recipeListPage({ recipes, setRecipes }) {
   return (
     <div id="lispage">
-      <section>
         <RecipeList recipes={recipes} setRecipes={setRecipes} />
-      </section>
     </div>
   );
 }
