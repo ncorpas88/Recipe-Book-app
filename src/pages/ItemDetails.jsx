@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useParams, useNavigate } from "react-router-dom";
 
 
@@ -9,16 +9,11 @@ function ItemDetails({recipes, setRecipes}) {
 
   const filterRecipe = recipes.find((eachRecipe) => String(eachRecipe.id) === idRecipe)
 
-  useEffect(() => {
-    if(!filterRecipe){
-      navigate("/recipeList")
-    }
-  }, [filterRecipe, navigate])
 
   const handleDelete = () => {
     const updateList = recipes.filter((eachRecipe) => String(eachRecipe.id) !== idRecipe)
     setRecipes(updateList)
-    
+     navigate("/recipeList")
   }
 
  if(!filterRecipe) {
