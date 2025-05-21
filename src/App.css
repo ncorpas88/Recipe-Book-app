@@ -36,10 +36,11 @@ border-radius: 20px;
 
 #contenedor {
     position: absolute;
-    background-color: rgb(71, 87, 68);
-    height: 100%;
+    background-color: rgb(68, 102, 62);
+    height: 110%;
     width: 194px;
     padding-right: 20px;
+    
 }
 
 
@@ -67,8 +68,12 @@ border-radius: 20px;
 }
 
 #about {
-    text-align: center;
+   text-align: center;
    background-color: rgb(83, 92, 100);
+   border-radius: 200px;
+   margin-left: 250px;
+   font-size: x-large;
+    
     
 }
 
@@ -76,7 +81,12 @@ border-radius: 20px;
 
 #error {
     text-align: center;
+    background-color: rgb(197, 7, 7);
+    border-radius: 200px;
+    margin-left: 250px;
+    font-size: x-large;
 }
+
 
 #lista {
     position: relative;
@@ -124,4 +134,13 @@ border-radius: 20px;
 #lista button {
     border-radius: 10px;
     background-color: rgb(250, 104, 104);
+}
+
+#contenedor li{
+    background-color: rgb(154, 173, 154);
+    border-radius: 10px;
+    padding: 4px;
+    text-align: center;
+    color: black;
+
 }
