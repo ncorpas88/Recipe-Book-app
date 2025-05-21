@@ -29,14 +29,14 @@
     margin-top: 60rem;
 }
 
-<<<<<<< HEAD
+
 .form-container {
 display: flex;           
   gap: 50px;               
   align-items: center; 
   justify-content: space-between;
 }
-=======
+
 
 #newrecipe {
     position: relative;
@@ -63,5 +63,3 @@ display: flex;
     width: 60px;
     margin-left: 30%;
 }
-
->>>>>>> 486e90a3c51323a1148f1082c5b08924f423d4c9
