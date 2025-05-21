@@ -66,11 +66,7 @@ border-radius: 20px;
     background-color: rgb(146, 172, 100);
 }
 
-#about {
-    text-align: center;
-   background-color: rgb(83, 92, 100);
-    
-}
+
 
 
 
@@ -90,26 +86,7 @@ border-radius: 20px;
     margin: 30px auto 100px auto;
 }
 
-#formulario {
-    background-color: rgb(48, 84, 117);
-    border-radius: 30px;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 160px;
-    font-size: large;
-    text-align: center;
-    
-}
 
-#formulario label {
-    display: block;
-    margin-bottom: 2px;
-    margin-top: 18px;
-}
-
-#formulario input {
-    margin-left: 9px;
-}
 
 #recetario {
     font-size:x-large;

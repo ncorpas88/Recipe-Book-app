@@ -1,4 +1,4 @@
-import logoGitHub from "../image/git.png";
+import logoGitHub from "../assets/image/git.png";
 
 function Footer() {
   return (

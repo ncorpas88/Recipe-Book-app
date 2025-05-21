@@ -4,16 +4,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url("../image/concepto-de-herramientas-de-helado-de-vista-superior-con-espacio-de-copia.jpg");
+    background-image: url("../assets/image/concepto-de-herramientas-de-helado-de-vista-superior-con-espacio-de-copia.jpg");
     background-size: cover;
-    
-   
-
 }
 
 .chicote {
     width: 34rem;
-    margin-top: 9rem;
+    margin-top: 5rem;
     border-radius: 10%;
     box-shadow: 70px 70px rgb(16, 27, 49);
     
@@ -30,4 +27,11 @@
 
 .tex-container {
     margin-top: 60rem;
+}
+
+.form-container {
+display: flex;           
+  gap: 50px;               
+  align-items: center; 
+  justify-content: space-between;
 }

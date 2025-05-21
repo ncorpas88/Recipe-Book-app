@@ -1,4 +1,4 @@
-import logoNvbar from "../image/logobook.png";
+import logoNvbar from "../assets/image/logobook.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 

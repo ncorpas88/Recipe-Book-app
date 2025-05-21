@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import './Formulario.css'
 
 function Formulario({recipes, setRecipes}) {
 
@@ -32,7 +33,7 @@ function Formulario({recipes, setRecipes}) {
   }
 
   return (
-    <div id="formulario">
+    <div className="formulario">
       <form onSubmit={handleSumit}>
         <span>Añadir Receta</span>
         <div>
