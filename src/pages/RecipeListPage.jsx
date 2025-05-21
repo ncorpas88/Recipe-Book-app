@@ -1,8 +1,7 @@
 import RecipeList from "../Components/RecipeList";
-import "./RecipeListPage.css";
 
 
-function recipeListPage({ recipes, setRecipes }) {
+function RecipeListPage({ recipes, setRecipes }) {
   return (
     <div id="lispage">
         <RecipeList recipes={recipes} setRecipes={setRecipes} />
@@ -10,4 +9,4 @@ function recipeListPage({ recipes, setRecipes }) {
   );
 }
 
-export default recipeListPage;
+export default RecipeListPage;

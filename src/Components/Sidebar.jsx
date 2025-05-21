@@ -19,6 +19,12 @@ function Sidebard() {
                 <Link to="/aboutUs">AboutUs</Link>
               </div>
             </li>
+            <br />
+            <li>
+              <div>
+                <Link to="/editRecipe">Editor Recetas</Link>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

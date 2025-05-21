@@ -29,9 +29,39 @@
     margin-top: 60rem;
 }
 
+<<<<<<< HEAD
 .form-container {
 display: flex;           
   gap: 50px;               
   align-items: center; 
   justify-content: space-between;
 }
+=======
+
+#newrecipe {
+    position: relative;
+    background-color: rgb(53, 73, 70);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 80px;
+    margin-left: 240px;
+    color: aliceblue;
+    
+
+    
+}
+
+#newrecipe button {
+    background-color: rgb(187, 114, 18);
+    border-radius: 10px;
+    width: 60px;
+    margin-left: 30%;
+}
+
+>>>>>>> 486e90a3c51323a1148f1082c5b08924f423d4c9

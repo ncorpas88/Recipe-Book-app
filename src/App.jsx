@@ -10,6 +10,7 @@ import AboutUs from "./pages/Aboutus";
 import Error from "./pages/error";
 import { useState } from "react";
 import recipeData from "./data/recetas.json"
+import EditRecipe from "./Components/EditRecipe";
 
 function App() {
   const [recipes, setRecipes] = useState(recipeData) 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/recipeList" element={<RecipeList recipes={recipes} setRecipes={setRecipes} />} />
         <Route path="/recipeList/:idRecipe" element={<ItemDetails recipes={recipes} setRecipes={setRecipes}/>}/>
+        <Route path="/editRecipe" element={<EditRecipe recipes={recipes} setRecipes={setRecipes} />} />
         <Route path="*" element={<Error/> }/>
       </Routes>
       <Footer />
