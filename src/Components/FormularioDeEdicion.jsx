@@ -41,11 +41,11 @@ function ActualizarForm({ recipes, setRecipes }) {
   return (
     <div className='formulario'>
       <form onSubmit={handleSumit}>
-        <span>Actualizar Receta</span>
+        <span>Actualizar lita de recetas</span>
         <div>
           <label>
             Seleccionar Receta
-            <select name="recipeSelect" value={selectedId} onChange={handleSelect}>
+            <select value={selectedId} onChange={handleSelect}>
               {recipes.map(r => (
                 <option key={r.id} value={r.id}>{r.name}</option>
               ))}
@@ -54,22 +54,22 @@ function ActualizarForm({ recipes, setRecipes }) {
           <br />
           <label>
             Nombre Receta
-            <input name="recipeName" type="text" placeholder="Nombre Receta" value={recipeName} onChange={e => setRecipeName(e.target.value)} required />
+            <input type="text" placeholder="Nombre Receta" value={recipeName} onChange={e => setRecipeName(e.target.value)} required />
           </label>
           <br />
           <label>
             Calorías
-            <input name="recipeCalories" type="text" placeholder="Calorías Receta" value={recipeCalories} onChange={e => setRecipeCalories(e.target.value)} required />
+            <input type="text" placeholder="Calorías Receta" value={recipeCalories} onChange={e => setRecipeCalories(e.target.value)} required />
           </label>
           <br />
           <label>
             Imagen Plato
-            <input name="recipeImage" type="url" placeholder="Imagen Plato" value={recipeImage} onChange={e => setRecipeImage(e.target.value)} required />
+            <input type="url" placeholder="Imagen Plato" value={recipeImage} onChange={e => setRecipeImage(e.target.value)} required />
           </label>
           <br />
           <label>
             Porciones
-            <input name="recipeServings" type="text" placeholder="Porciones Receta" value={recipeServings} onChange={e => setRecipeServings(e.target.value)} required />
+            <input type="text" placeholder="Porciones Receta" value={recipeServings} onChange={e => setRecipeServings(e.target.value)} required />
           </label>
           <br />
           <button type="submit">Actualizar Receta</button>
